@@ -110,13 +110,13 @@ function setup() {
 
   didiInput1 = createInput('');
   didiInput1.attribute('placeholder', ' 「 跟誰 」    ex.自己?朋友?家人?');
-  didiInput1.position(width/2 - 160, height/2 + 70)
+  didiInput1.position(width/2 - 160, height/2 + 100)
   didiInput1.style('font-size', '16px');
   didiInput1.style('height', '35px');
   didiInput1.style('width', '300px');
   didiInput2 = createInput('');
   didiInput2.attribute('placeholder', ' 「 做什麼 」    ex.喝酒?聊天?運動?');
-  didiInput2.position(width/2 - 160, height/2 + 100)
+  didiInput2.position(width/2 - 160, height/2 + 160)
   didiInput2.style('font-size', '16px');
   didiInput2.style('height', '35px');
   didiInput2.style('width', '300px');
