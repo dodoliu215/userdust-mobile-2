@@ -110,13 +110,13 @@ function setup() {
 
   didiInput1 = createInput('');
   didiInput1.attribute('placeholder', ' 「 跟誰 」    ex.自己?朋友?家人?');
-  didiInput1.position(width/2 - 160, height/2 + 100)
+  didiInput1.position(width/2 - 160, height/2 + 70)
   didiInput1.style('font-size', '16px');
   didiInput1.style('height', '35px');
   didiInput1.style('width', '300px');
   didiInput2 = createInput('');
   didiInput2.attribute('placeholder', ' 「 做什麼 」    ex.喝酒?聊天?運動?');
-  didiInput2.position(width/2 - 160, height/2 + 200)
+  didiInput2.position(width/2 - 160, height/2 + 100)
   didiInput2.style('font-size', '16px');
   didiInput2.style('height', '35px');
   didiInput2.style('width', '300px');
@@ -135,7 +135,7 @@ function setup() {
   eyeSelect1.option('@');
   eyeSelect1.option('Φ');
   eyeSelect1.option('￣');
-  eyeSelect1.style('font-size', '60px');
+  eyeSelect1.style('font-size', '40px');
 
   eyeSelect2= createSelect();
   eyeSelect2.position(width/2+30, height/2+90);
@@ -148,7 +148,7 @@ function setup() {
   eyeSelect2.option('@');
   eyeSelect2.option('Φ');
   eyeSelect2.option('￣');
-  eyeSelect2.style('font-size', '60px');
+  eyeSelect2.style('font-size', '40px');
 
   eyeSelect1.hide();
   eyeSelect2.hide();
@@ -161,7 +161,7 @@ function setup() {
   mouthSelect.option('3');
   mouthSelect.option('ɞ');
   mouthSelect.option('w');
-  mouthSelect.style('font-size', '60px');
+  mouthSelect.style('font-size', '40px');
 
   mouthSelect.hide();
 
@@ -175,7 +175,7 @@ function setup() {
   faceSelect1.option('●');
   faceSelect1.option('{');
   faceSelect1.option('₍₍');
-  faceSelect1.style('font-size', '60px');
+  faceSelect1.style('font-size', '40px');
 
   faceSelect2= createSelect();
   faceSelect2.position(width/2+30, height/2+90);
@@ -187,7 +187,7 @@ function setup() {
   faceSelect2.option('●');
   faceSelect2.option('}');
   faceSelect2.option('₎₎');
-  faceSelect2.style('font-size', '60px');
+  faceSelect2.style('font-size', '40px');
 
   faceSelect1.hide();
   faceSelect2.hide();
@@ -200,7 +200,7 @@ function setup() {
   otherSelect1.option('↑_');
   otherSelect1.option('ლ');
   otherSelect1.option('୧');
-  otherSelect1.style('font-size', '60px');
+  otherSelect1.style('font-size', '40px');
 
   otherSelect2= createSelect();
   otherSelect2.position(width/2+30, height/2+90);
@@ -210,7 +210,7 @@ function setup() {
   otherSelect2.option(';Ψ');
   otherSelect2.option('ლ');
   otherSelect2.option('୨');
-  otherSelect2.style('font-size', '60px');
+  otherSelect2.style('font-size', '40px');
 
   otherSelect1.hide();
   otherSelect2.hide();
@@ -280,8 +280,8 @@ function draw() {
     fill(255)
     noStroke()
     textSize(25)
-    text(didiInput1.value(), -140, -150)
-    text(didiInput2.value(), -140, -105)
+    text(didiInput1.value(), -120, -130)
+    text(didiInput2.value(), -120, -85)
 
     if( didiInput1.value() != '' && didiInput2.value() != ''){
       pointBtn.show();
